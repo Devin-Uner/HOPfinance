@@ -112,14 +112,13 @@ function get_circle_locations(){
 		for (var i = 0; i < circles.length; i++) {
             //make sure no two circles are in same cell
             while(true) {
-                var randX = Math.floor((Math.random() * DIMENSION));
                 var randY = Math.floor((Math.random() * DIMENSION));
                 if (grid[randX][randY] == null) {
                     break;
                 }
             }
-            grid[randX][randY] = {"name": circles[i][0], "radius": circles[i][1], "x": randX*cell_width + max_radius, "y": randY*cell_width + max_radius, "brightness": 0} ;//circles[i];
-            all_circles.push({"name": circles[i][0], "radius": circles[i][1], "x": randX*cell_width + max_radius, "y": randY*cell_width + max_radius, "brightness": 0});
+            grid[randX][randY] = {"name": circles[i][0], "radius": circles[i][1], "x": randX*max_radius*2 + max_radius, "y": randY*max_radius*2 + max_radius} ;//circles[i];
+            all_circles.push({"name": circles[i][0], "radius": circles[i][1], "x": randX*max_radius*2 + max_radius, "y": randY*max_radius*2 + max_radius});
         }
         console.log(grid);
 
@@ -129,7 +128,7 @@ function get_circle_locations(){
 
 // randomly moves each circle in the grid
 function move_circles(grid){
-	let grid_size = 5;
+	let grid_size = max_radius*2;
 
 	// for everything row in the array
 	for (var x = 0; x < grid.length; x++) {
@@ -157,7 +156,7 @@ function move_circles(grid){
 
 
 // draws all the circles to the screen
-function draw_circles() {
+function draw_circles(grid) {
 
 	// for everything row in the array
 	for (var x = 0; x < grid.length; x++) {
@@ -167,7 +166,7 @@ function draw_circles() {
 			
 			// if the cell isnt empty
 			if(grid[x][y] != null){
-				draw_circle("rgb("+((100-grid[x][y]["brightness"])*255/100).toString()+", 255, "+((100-grid[x][y]["brightness"])*255/100).toString()+")", grid[x][y]["x"], grid[x][y]["y"], grid[x][y]["radius"]);
+				draw_circle("#3F3", grid[x][y]["x"], grid[x][y]["y"], grid[x][y]["radius"]);
 			}
 		}
 	}
@@ -196,30 +195,54 @@ function get_location(name){
 
 //find which edges to draw between circles
 function connect_edges() {
-    for (var i = 0; i < get_keys(data).length; i++) {
+    for (int i = 0; i < get_keys(data).length; i++) {
         var sortArr = sort(data[get_keys(data)[i]]);
         for (j = sortArr.length - 1; j > sortArr.length - 4; j--) {
-            draw_line_from_companies(get_keys(data)[i], sortArr[j]);
+            draw_line_from_companies(get_keys(data)[i], sortedArr[j]);
         } 
     }
 }
 
-// get the circle location the user clicked on
-function click_release(event) {
-	var rect = document.getElementById("world_canvas").getBoundingClientRect();
-    var x = event.clientX - rect.left;
-    var y = event.clientY - rect.top;
-    
-	
-    var coor = "X coords: " + x + ", Y coords: " + y;
-    console.log(coor);
-    
-	draw_circle([x, y], 5, "FF0000");  
+draw_line_from_companies("AAPL.csv", "GOOG.csv");
+
+/* Compute "diffusion" process. 
+ * Takes in one node that gets clicked on.
+ * Then uses edge weights to calculate how 
+ * "brightness" on other nodes are effected.
+ * which determines how closely related two 
+ * companies/industries are. */
+function graph_reaction(name) {
+    var circles = {};
+    for(var key in data) {
+        circles[key] = 0;
+    }
+        circles[name] = 100;
+
+    newCircles = copy_dict(circles);
+    spread = [];
+    while (spread.length < get_keys(circles).length) {
+        for (var circ in circles) {
+            if (circles[circ] != 0 && spread[circ] != -1) {
+                newCircles[circ] = circles[circ];
+                newCircles[circ] = sort(data[circ]);
+                for (var i = data[circ].length - 1; i > data[circ].length - 4; i--) {
+                    newCircles[i] += data[circ][i];
+                }
+                spread.push(circ); 
+            }
+            circles = copy_dict(circles);
+        }
+    }  
 }
 
-connect_edges();
-draw_circles();
-
+/* Helper method to copy a dictionary. */
+function copy_dict(dict) {
+    var copy = {};
+    for (entry in dict) {
+        copy[entry] = dict[entry];
+    }
+    return copy;
+}
 
 
 
