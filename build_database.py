@@ -27,7 +27,7 @@ for csv_file_name in csvs:
 	    	if "201" in line[0]:
 	    		current_price = float(line[4])
 	    		if last_price != None:
-	    			deltas[csv_file_name][line[0]] = .8 if (current_price / float(last_price) > 1.01) else -1 if (current_price / float(last_price) < .99) else 0#(current_price/last_price)-1.0
+	    			deltas[csv_file_name][line[0]] = 1 if (current_price / float(last_price) > 1.01) else -1 if (current_price / float(last_price) < .99) else 0#(current_price/last_price)-1.0
 	    		last_price = current_price
 
 # subtract the average from each value
@@ -80,40 +80,6 @@ def test(input_vals):
 		print new_deltas
 		print
 	return new_deltas 
-
-test_input = {
-	  "AAPL.csv":1,#sigmasoid(7),
-      "GOOG.csv":1,#sigmasoid(16),
-      "UTHR.csv":1,#sigmasoid(0.7),
-      "MSFT.csv":1,#sigmasoid(2.78),
-      "F.csv":1,#sigmasoid(.46),
-      "IBM.csv":1,#sigmasoid(-1),
-      "TSLA.csv":1,#sigmasoid(-50),
-      "INTC.csv":1,#sigmasoid(-0.70),
-      "DAL.csv":1,#sigmasoid(3.13),
-      "CAT.csv":1,#sigmasoid(1.17),
-      "AMZN.csv":1,#sigmasoid(14)
-      "MMM.csv":1,
-      "SHLD.csv":0
-}
-test_output = {
-	  "AAPL.csv":6,
-      "GOOG.csv":8,
-      "UTHR.csv":0.5,
-      "MSFT.csv":-.1,
-      "F.csv":.46,
-      "IBM.csv":-1,
-      "TSLA.csv":14,
-      "INTC.csv":-0.20,
-      "DAL.csv":-.7,
-      "CAT.csv":1.17,
-      "AMZN.csv":1.6,
-      "MMM.csv":1,
-      "SHLD.csv":-1
-
-}
-
-test(test_input)
 
 
 
