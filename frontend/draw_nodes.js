@@ -71,7 +71,7 @@ function get_size(name){
 	return sum * max_radius / keys.length;
 }
 
-// mkes the array of where the circles need to go
+// makes the array of where the circles need to go
 function get_circle_locations(){
 	// step one: make an array X by Y of null values
 	var X = 10;
@@ -102,6 +102,60 @@ function get_circle_locations(){
 	console.log(circles);
 
 	// step three: randomly place circles in the array
+
+
+}
+
+// randomly moves each circle in the grid
+function move_circles(grid){
+	let grid_size = max_radius*2;
+
+	// for everything row in the array
+	for (var x = 0; x < grid.length; x++) {
+		
+		// for every cell in the row
+		for (var y = 0; y < grid[x].length; y++) {
+			
+			// if the cell isnt empty
+			if(grid[x][y] != null){
+				// pick to randomly add or subtract from the x position
+				var delta_x = Math.random() > 0.5 ? -1 : 1;
+				if(grid[x][y]["x"] + delta_x < 0 || grid[x][y]["x"] + delta_x > (x+1)*grid_size)
+					delta_x *= -1;
+				grid[x][y]["x"] += delta_x;
+
+				// pick to randomly add or subtract from the y position
+				var delta_y = Math.random() > 0.5 ? -1 : 1;
+				if(grid[x][y]["y"] + delta_y < 0 || grid[x][y]["y"] + delta_y > (y+1)*grid_size)
+					delta_y *= -1;
+				grid[x][y]["y"] += delta_y;
+
+
+			}
+		}
+	}
+}
+
+
+// draws all the circles to the screen
+function draw_circles(grid) {
+
+	// for everything row in the array
+	for (var x = 0; x < grid.length; x++) {
+		
+		// for every cell in the row
+		for (var y = 0; y < grid[x].length; y++) {
+			
+			// if the cell isnt empty
+			if(grid[x][y] != null){
+				draw_circle("#3F3", grid[x][y]["x"], grid[x][y]["y"], grid[x][y]["radius"]);
+			}
+		}
+	}
+}
+
+// draw all the lines 
+function draw_lines(grid) {
 	
 }
 
