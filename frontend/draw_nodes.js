@@ -193,6 +193,16 @@ function get_location(name){
 	return null;
 }
 
+//find which edges to draw between circles
+function connect_edges() {
+    for (int i = 0; i < get_keys(data).length; i++) {
+        var sortArr = sort(data[get_keys(data)[i]]);
+        for (j = sortArr.length - 1; j > sortArr.length - 4; j--) {
+            draw_line_from_companies(get_keys(data)[i], sortedArr[j]);
+        } 
+    }
+}
+
 draw_line_from_companies("AAPL.csv", "GOOG.csv");
 
 
