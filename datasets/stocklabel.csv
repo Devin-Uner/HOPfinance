@@ -1,0 +1,51 @@
+stock,sector
+AAPL,technology
+AMGN,healthcare
+AMZN,technology
+BA,industrials
+BAC,financials
+BHP,basic materials
+CMCSA,telecom
+COP,energy
+CTL,telecom
+CVX,energy
+D,utilities
+DAL,industrials
+DIS,cyclical consumer goods
+DOW,basic materials
+DUK,utilities
+EFX,industrials
+EMN,basic materials
+EXC,utilities
+GE,industrials
+GILD,healthcare
+GOOGL,technology
+HD,cyclical consumer goods
+HON,basic materials
+IBM,technology
+JNJ,healthcare
+JPM,financials
+KO,non-cyclical consumer goods
+LOW,cyclical consumer goods
+LVLT,telecom
+MCD,cyclical consumer goods
+MO,non-cyclical consumer goods
+MON,basic materials
+MRK,healthcare
+MSFT,technology
+OKE,utilities
+PEP,non-cyclical consumer goods
+PFE,healthcare
+PG,non-cyclical consumer goods
+PM,non-cyclical consumer goods
+QQQ,financials
+SLB,energy
+SO,utilities
+SPY,financials
+T,telecom
+TSLA,cyclical consumer goods
+UNP,industrials
+VLO,energy
+VZ,telecom
+WFC,financials
+XOM,energy
