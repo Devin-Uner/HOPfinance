@@ -71,11 +71,12 @@ function get_size(name){
 	return sum * max_radius / keys.length;
 }
 
-// mkes the array of where the circles need to go
+// makes the array of where the circles need to go
 function get_circle_locations(){
 	// step one: make an array X by Y of null values
-	var X = 10;
-	var Y = 10;
+        var DIMENSION = 10;
+	var X = DIMENSION;
+	var Y = DIMENSION;
 	var grid = [[]];
 	for (var x = 0; x < X; x++) {
 		for (var y = 0; y < Y; y++) {
@@ -102,7 +103,18 @@ function get_circle_locations(){
 	console.log(circles);
 
 	// step three: randomly place circles in the array
-	
+        for (var i = 0; i < circles.length; i++) {
+            //make sure no two circles are in same cell
+            while(true) {
+                var randX = Math.floor((Math.random() * DIMENSION));
+                var randY = Math.floor((Math.random() * DIMENSION));
+                if (grid[randX][randY] == null) {
+                    break;
+                }
+            }
+            grid[randX][randY] = circles[i];
+            console.log(grid);
+        }
 }
 
 draw_line("#F0F", 2, 100, 100, 200, 200);
