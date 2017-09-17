@@ -4,20 +4,21 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>RippleNet</title>
+    <title>RippleNet Charity</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="C:\Users\Stephen\Documents\My Stuff\Coding\HopHacks Fall 2017\ripplenet.css">
-    <link rel="icon" type="image/gif/png" href="Logo.png">
+    <link rel="icon" type="image/gif/png" href="Logo3.png">
   </head>
   <body>
     <nav class="navbar navbar-default">
   		<div class="container-fluid rNavBar">
     		<div class="navbar-header">
-      			<a class="navbar-brand rBrand" href="C:\Users\Stephen\Documents\My Stuff\Coding\HopHacks Fall 2017\RippleNetCharityAbout.html">
-              <p class="rDeepBlue">RippleNet <b>Charity</b></p>
-            </a>
-    		</div>
+          <a class="navbar-brand rBrand" href="C:\Users\Stephen\Documents\My Stuff\Coding\HopHacks Fall 2017\RippleNetCharityAbout.html">
+            <img src="TransparentLogo3.png" height=80px;>
+          </a>
+        </div>
+        <p class="nav navbar-nav rDeepBlue rBrand"> <b>Charity</b></p>
     		<ul class="nav navbar-nav navbar-right">
       		<li class="rNavBar">
             <a href="C:\Users\Stephen\Documents\My Stuff\Coding\HopHacks Fall 2017\RippleNetCharityMain.html">
@@ -34,11 +35,6 @@
               <h3 class="rDeepBlue">Resources</h3>
             </a>
           </li>
-     			<li class="rNavBar">
-            <a href="C:\Users\Stephen\Documents\My Stuff\Coding\HopHacks Fall 2017\RippleNetCharityContactUs.html">
-              <h3 class="rDeepBlue">Contact Us</h3>
-            </a>
-          </li>
     		</ul>
   		</div>
 	  </nav>
@@ -48,7 +44,7 @@
     </div>
      <div class="long">
       <h1 class="rDeepBlue">How it Works</h1>
-      <p class="rDeepBlue"></p>
+      <p class="rDeepBlue">Our software utilizes a specialized type of neural network called a Hopfield network. In a Hopfield network, every virtual neuron is connected to every other neuron, creating a massive mesh net. This contrasts greatly with conventional feed-foreward neural networks, in which signals propagate in only one direction. We chose this style of network because it most accurately simulates how companies interact with each other. Every company has some influence over every other company, granted some may have very little, it is almost never zero.<br /><br />Using a google API to get financial data for any company, we were able to train it with over 400 companies. For testing purposes, we loaded it with 50 better known companies that could be tracked by hand as needed. The training algorithms are scalable and will work with any amount of data. It could work with as few as two small family owned businesses or as many as 1,000 major world wide corporations; the neural network takes care of finding the trends no matter the scale.  We programmed the Hopfield network ourselves, working from hand with no external libraries. We used R to get the data sets, Python to train the data and Javascript to display it in a more user friendly fashion. We also used a specialized activation function in order to better propagate signals across the network. <br /><br />This function allows network changes to more accurately effect the correct corresponding areas of other parts of the network. We also utilized an interconnected function to display data as well as slow the network, so that changes can be seen by the naked eye (normally the network would output too much data for the human brain to process).  Most uses for Hopfield networks are limited to simple partial memory tests (given part of an image it has seen before, reconstruct the rest of the image). Our network is analyzing vastly more complex data trends, and therefore outputs data in a very different way than normal neural networks. Instead of receiving most of an image and returning the part that was missing, our network functions in reverse, actively changing its own nodes to guess the larger picture given only a small (sometimes even a single) data point to work from.   The training algorithms find correlations among many different stock prices from a variety of companies, and calculates the gains and losses for each company. This data is then fed into the network which learns which companies typically do well together, and which ones are competitors. Even though the initial data we are feeding it is correlation, the sheer amount of data, compounded over many years, allows it to become more certain about its guesses. Correlation on this scale can imply trends that may not have been obvious before.  Using this knowledge, it becomes possible to save areas from financial crisis before they happen. It becomes possible to shape entire nations for the better. It becomes more possible than ever before to truly make a difference.</p>
     </div>
     <div class="long">
       <h1 class="rDeepBlue">Our Team</h1>

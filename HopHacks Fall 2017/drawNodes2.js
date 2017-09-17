@@ -301,22 +301,24 @@ function shimmer(values){
 		circles[circle_num]["brightness"] = 0;//values[circles[circle_num]["name"]];
 	}
 
-	connect_edges();
+	// connect_edges();
 	draw_circles_white();
 
 	var iteration = 0;
 	var foo = function(){
 		iteration += 1;
 		if(iteration < 1000)
-			setTimeout(foo, 10);
+			setTimeout(foo, 2);
 		for(var circle_num = 0; circle_num < get_keys(circles).length; circle_num++){
 			circles[circle_num]["brightness"] += Math.pow(values[circles[circle_num]["name"]], 3) / 100000;
 
 			// draw edges
-			// var sortArr = get_keys(data[circles[circle_num]["name"]]);
-	  //       for (j = sortArr.length - 1; j > 0; j--) {
-	  //           draw_line_from_companies(circles[circle_num]["name"], sortArr[j], "rgba(100, 100, 100, "+(0.000000005*values[circles[circle_num]["name"]]*sortArr[j]).toString()+")");
-	  //       }
+			var sortArr = get_keys(data[circles[circle_num]["name"]]);
+	        for (j = sortArr.length - 1; j > 0; j--) {
+	        	if(values[circles[circle_num]["name"]]*values[sortArr[j]] >= 0.6){
+	            	draw_line_from_companies(circles[circle_num]["name"], sortArr[j], "rgba(100, 100, 100, "+(0.01*values[circles[circle_num]["name"]]*values[sortArr[j]]).toString()+")");
+	        	}
+	        }
 		}
 		draw_circles();
 	}
@@ -324,24 +326,39 @@ function shimmer(values){
 }
 
 ///////////////////////// find the users mouse location
-function getMousePos(canvas, evt) {
-    var rect = canvas.getBoundingClientRect();
-    return {
-      x: evt.clientX - rect.left,
-      y: evt.clientY - rect.top
-    };
-  }
-  canvas.addEventListener('mousemove', function(evt) {
-    var mousePos = getMousePos(canvas, evt);
-    
-    for (var i = 0; i < circles.length; i++) {
-    	if( Math.pow(  Math.pow(x-circles[i]["x"], 2) + Math.pow(y-circles[i]["y"], 2), 0.5) < circles[i]["radius"])
-    		console.log(circles[i]["name"]);
-    }
-
-  }, false);
+function myFunction(e) {
+    var x = e.clientX;
+    var y = e.clientY;
+    var coor = "Coordinates: (" + x + "," + y + ")";
+    document.getElementById("demo").innerHTML = coor;
+}
 
 
 
 connect_edges();
 draw_circles();
+
+
+function search() {
+	symbol = document.getElementById("region").value;
+	console.log(symbol);
+	for(var i = 0; i < circles.length; i++){
+		if(circles[i]["name"] == symbol+".csv"){
+			console.log("here", circles[i]["x"], circles[i]["y"], circles[i]["radius"]);
+			ctx.lineWidth = 50;
+			ctx.strokeStyle = "#99ffff";
+
+			ctx.moveTo(circles[i]["x"], circles[i]["y"]);
+			ctx.beginPath();
+			ctx.arc(circles[i]["x"],circles[i]["y"],circles[i]["radius"]+5,0,2*Math.PI);
+			ctx.stroke();
+			ctx.fill();
+			document.getElementById("region").value = "";
+
+		}
+	}
+}
+
+setInterval(function foo() {
+	search();
+}, 1000);

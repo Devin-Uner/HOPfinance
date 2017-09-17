@@ -13,8 +13,7 @@
 }
 
 .rBrand{
-	font-size:60px;
-	margin:20px;
+	font-size:70px;
 }
 
 .rNavButton{
@@ -22,7 +21,7 @@
 }
 
 .ourCanvas{
-	border:1px solid #000000 ;
+
 }
 
 .ractive{
@@ -45,7 +44,8 @@
 	padding-top: 10px;
 	margin-left:10px;
 	margin-right:10px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 	background-color:#8080FF;
 	border-radius: 10px;
 	<!--box-shadow: 10px 10px 5px #666666;-->
@@ -102,4 +102,21 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.rListItem{
+	background-color:#8080ff;
+	border-color:navy;
+	color:navy;
+}
+
+.rLessPadding{
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.noSize{
+	padding:0px;
+	margin:0px;
+	border-style: none;
 }
