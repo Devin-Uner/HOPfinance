@@ -1,0 +1,5 @@
+How it works
+
+We used concepts from Machine Learning and Artificial Intelligence to implement the sophisticated network
+that you see displayed on the main page of this website.  This visual network is known as a "Hopfield" meaning
+that each node is conncected to every other node, and the lines between the nodes, called "edges" have "weights" that 
