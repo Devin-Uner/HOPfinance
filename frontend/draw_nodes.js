@@ -174,19 +174,19 @@ function draw_circles_white() {
 
 	for(var circle_num = 0; circle_num < circles.length; circle_num++){
 		color = industry_to_colors[company_to_industry[circles[circle_num]["name"].replace(".csv","")]];
-		draw_circle("#FFF", circles[circle_num]["x"], circles[circle_num]["y"], circles[circle_num]["radius"]);
+		draw_circle("#AAA", circles[circle_num]["x"], circles[circle_num]["y"], circles[circle_num]["radius"]);
 	}
 
 }
 
 // draws a line from one company to another
-function draw_line_from_companies(name1, name2) {
+function draw_line_from_companies(name1, name2, color) {
 	 let loc1 = get_location(name1);
 	 let loc2 = get_location(name2);
 
 	 let width = Math.floor(data[name1][name2]);
 	 // console.log(loc1, loc2);
-	 draw_line("#999", width, loc1[0], loc1[1], loc2[0], loc2[1]);
+	 draw_line(color, width, loc1[0], loc1[1], loc2[0], loc2[1]);
 }
 
 
@@ -205,7 +205,7 @@ function connect_edges() {
     for (var i = 0; i < get_keys(data).length; i++) {
         var sortArr = sort(data[get_keys(data)[i]]);
         for (j = sortArr.length - 1; j > sortArr.length - 3; j--) {
-            draw_line_from_companies(get_keys(data)[i], sortArr[j]);
+            draw_line_from_companies(get_keys(data)[i], sortArr[j], "#999");
         } 
     }
 }
@@ -301,7 +301,7 @@ function shimmer(values){
 		circles[circle_num]["brightness"] = 0;//values[circles[circle_num]["name"]];
 	}
 
-	connect_edges();
+	// connect_edges();
 	draw_circles_white();
 
 	var iteration = 0;
@@ -311,6 +311,12 @@ function shimmer(values){
 			setTimeout(foo, 10);
 		for(var circle_num = 0; circle_num < get_keys(circles).length; circle_num++){
 			circles[circle_num]["brightness"] += Math.pow(values[circles[circle_num]["name"]], 3) / 100000;
+
+			// draw edges
+			var sortArr = get_keys(data[circles[circle_num]["name"]]);
+	        for (j = sortArr.length - 1; j > 0; j--) {
+	            draw_line_from_companies(circles[circle_num]["name"], sortArr[j], "rgba(100, 100, 100, "+(0.1*data[circles[circle_num]["name"]][sortArr[j]]).toString()+")");
+	        }
 		}
 		draw_circles();
 	}
@@ -338,7 +344,7 @@ function getMousePos(canvas, evt) {
 
 
 connect_edges();
-draw_circles()
+draw_circles();
 
 
 
