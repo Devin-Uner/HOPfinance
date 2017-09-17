@@ -23,7 +23,7 @@ grid.pop();
 circles = get_circle_locations();
 
 // define the colors of the data
-let industry_to_colors = {"technology": [0, 191, 255], "healthcare": [255, 0, 64], "industrials": [255, 191, 0], "financials": [0, 255, 128], "basic materials": [255, 128, 0], "telecom": [191, 255, 0], "energy": [0, 255, 0], "utilities": [191, 0, 255], "cyclical consumer goods": [128, 0, 255], "non-cyclical consumer goods": [255, 0, 255]};
+let industry_to_colors = {"technology": [0, 0, 0], "healthcare": [215, 150, 150], "industrials": [78, 102, 249], "financials": [131, 215, 90], "basic materials": [110, 156, 151], "telecom": [136, 89, 54], "energy": [240, 255, 0], "utilities": [255, 0, 0], "cyclical consumer goods": [128, 0, 255], "non-cyclical consumer goods": [12, 75, 36]};
 // define the industry for each company
 let company_to_industry = {"AAPL":"technology","AMGN":"healthcare","AMZN":"technology","BA":"industrials","BAC":"financials","BHP":"basic materials","CMCSA":"telecom","COP":"energy","CTL":"telecom","CVX":"energy","D":"utilities","DAL":"industrials","DIS":"cyclical consumer goods","DOW":"basic materials","DUK":"utilities","EFX":"industrials","EMN":"basic materials","EXC":"utilities","GE":"industrials","GILD":"healthcare","GOOGL":"technology","HD":"cyclical consumer goods","HON":"basic materials","IBM":"technology","JNJ":"healthcare","JPM":"financials","KO":"non-cyclical consumer goods","LOW":"cyclical consumer goods","LVLT":"telecom","MCD":"cyclical consumer goods","MO":"non-cyclical consumer goods","MON":"basic materials","MRK":"healthcare","MSFT":"technology","OKE":"utilities","PEP":"non-cyclical consumer goods","PFE":"healthcare","PG":"non-cyclical consumer goods","PM":"non-cyclical consumer goods","QQQ":"financials","SLB":"energy","SO":"utilities","SPY":"financials","T":"telecom","TSLA":"cyclical consumer goods","UNP":"industrials","VLO":"energy","VZ":"telecom","WFC":"financials","XOM":"energy"}
 
@@ -174,7 +174,7 @@ function draw_circles_white() {
 
 	for(var circle_num = 0; circle_num < circles.length; circle_num++){
 		color = industry_to_colors[company_to_industry[circles[circle_num]["name"].replace(".csv","")]];
-		draw_circle("#AAA", circles[circle_num]["x"], circles[circle_num]["y"], circles[circle_num]["radius"]);
+		draw_circle("#EEE", circles[circle_num]["x"], circles[circle_num]["y"], circles[circle_num]["radius"]);
 	}
 
 }
@@ -301,22 +301,22 @@ function shimmer(values){
 		circles[circle_num]["brightness"] = 0;//values[circles[circle_num]["name"]];
 	}
 
-	// connect_edges();
+	connect_edges();
 	draw_circles_white();
 
 	var iteration = 0;
 	var foo = function(){
 		iteration += 1;
-		if(iteration < 100000)
+		if(iteration < 1000)
 			setTimeout(foo, 10);
 		for(var circle_num = 0; circle_num < get_keys(circles).length; circle_num++){
 			circles[circle_num]["brightness"] += Math.pow(values[circles[circle_num]["name"]], 3) / 100000;
 
 			// draw edges
-			var sortArr = get_keys(data[circles[circle_num]["name"]]);
-	        for (j = sortArr.length - 1; j > 0; j--) {
-	            draw_line_from_companies(circles[circle_num]["name"], sortArr[j], "rgba(100, 100, 100, "+(0.1*data[circles[circle_num]["name"]][sortArr[j]]).toString()+")");
-	        }
+			// var sortArr = get_keys(data[circles[circle_num]["name"]]);
+	  //       for (j = sortArr.length - 1; j > 0; j--) {
+	  //           draw_line_from_companies(circles[circle_num]["name"], sortArr[j], "rgba(100, 100, 100, "+(0.000000005*values[circles[circle_num]["name"]]*sortArr[j]).toString()+")");
+	  //       }
 		}
 		draw_circles();
 	}
