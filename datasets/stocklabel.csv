@@ -1,510 +1,505 @@
-stock,sector
-AAP,Consumer Discretionary
-AMZN,Consumer Discretionary
-AZO,Consumer Discretionary
-BBY,Consumer Discretionary
-BWA,Consumer Discretionary
-CBS,Consumer Discretionary
-CCL,Consumer Discretionary
-CHTR,Consumer Discretionary
-CMCSA,Consumer Discretionary
-CMG,Consumer Discretionary
-COH,Consumer Discretionary
-DG,Consumer Discretionary
-DHI,Consumer Discretionary
-DIS,Consumer Discretionary
-DISCA,Consumer Discretionary
-DISCK,Consumer Discretionary
-DISH,Consumer Discretionary
-DLPH,Consumer Discretionary
-DLTR,Consumer Discretionary
-DRI,Consumer Discretionary
-EXPE,Consumer Discretionary
-F,Consumer Discretionary
-FL,Consumer Discretionary
-FOX,Consumer Discretionary
-FOXA,Consumer Discretionary
-GM,Consumer Discretionary
-GPC,Consumer Discretionary
-GPS,Consumer Discretionary
-GRMN,Consumer Discretionary
-GT,Consumer Discretionary
-HAS,Consumer Discretionary
-HBI,Consumer Discretionary
-HD,Consumer Discretionary
-HLT,Consumer Discretionary
-HOG,Consumer Discretionary
-IPG,Consumer Discretionary
-JWN,Consumer Discretionary
-KMX,Consumer Discretionary
-KORS,Consumer Discretionary
-KSS,Consumer Discretionary
-LB,Consumer Discretionary
-LEG,Consumer Discretionary
-LEN,Consumer Discretionary
-LKQ,Consumer Discretionary
-LOW,Consumer Discretionary
-M,Consumer Discretionary
-MAR,Consumer Discretionary
-MAT,Consumer Discretionary
-MCD,Consumer Discretionary
-MGM,Consumer Discretionary
-MHK,Consumer Discretionary
-NKE,Consumer Discretionary
-NWL,Consumer Discretionary
-NWS,Consumer Discretionary
-NWSA,Consumer Discretionary
-OMC,Consumer Discretionary
-ORLY,Consumer Discretionary
-PCLN,Consumer Discretionary
-PHM,Consumer Discretionary
-PVH,Consumer Discretionary
-RCL,Consumer Discretionary
-RL,Consumer Discretionary
-ROST,Consumer Discretionary
-SBUX,Consumer Discretionary
-SIG,Consumer Discretionary
-SNA,Consumer Discretionary
-SNI,Consumer Discretionary
-SPLS,Consumer Discretionary
-SWK,Consumer Discretionary
-TGT,Consumer Discretionary
-TIF,Consumer Discretionary
-TJX,Consumer Discretionary
-TRIP,Consumer Discretionary
-TSCO,Consumer Discretionary
-TWX,Consumer Discretionary
-UA,Consumer Discretionary
-UAA,Consumer Discretionary
-ULTA,Consumer Discretionary
-VFC,Consumer Discretionary
-VIAB,Consumer Discretionary
-WHR,Consumer Discretionary
-WYN,Consumer Discretionary
-WYNN,Consumer Discretionary
-YUM,Consumer Discretionary
-ADM,Consumer Staples
-BF.B,Consumer Staples
-CAG,Consumer Staples
-CHD,Consumer Staples
-CL,Consumer Staples
-CLX,Consumer Staples
-COST,Consumer Staples
-COTY,Consumer Staples
-CPB,Consumer Staples
-CVS,Consumer Staples
-DPS,Consumer Staples
-EL,Consumer Staples
-GIS,Consumer Staples
-HRL,Consumer Staples
-HSY,Consumer Staples
-K,Consumer Staples
-KHC,Consumer Staples
-KMB,Consumer Staples
-KO,Consumer Staples
-KR,Consumer Staples
-MDLZ,Consumer Staples
-MKC,Consumer Staples
-MNST,Consumer Staples
-MO,Consumer Staples
-PEP,Consumer Staples
-PG,Consumer Staples
-PM,Consumer Staples
-SJM,Consumer Staples
-STZ,Consumer Staples
-SYY,Consumer Staples
-TAP,Consumer Staples
-TSN,Consumer Staples
-WBA,Consumer Staples
-WMT,Consumer Staples
-ANDV,Energy
-APA,Energy
-APC,Energy
-BHGE,Energy
-BP,Energy
-CHK,Energy
-COG,Energy
-COP,Energy
-CVX,Energy
-CXO,Energy
-DVN,Energy
-ENB,Energy
-EOG,Energy
-EQT,Energy
-FTI,Energy
-HAL,Energy
-HES,Energy
-HP,Energy
-KMI,Energy
-MPC,Energy
-MRO,Energy
-NBL,Energy
-NFX,Energy
-NOV,Energy
-OKE,Energy
-OXY,Energy
-PSX,Energy
-PTR,Energy
-PXD,Energy
-RRC,Energy
-SLB,Energy
-SU,Energy
-VLO,Energy
-WMB,Energy
-XEC,Energy
-XOM,Energy
-AFL,Financials
-AIG,Financials
-AIZ,Financials
-AJG,Financials
-ALL,Financials
-AMG,Financials
-AMP,Financials
-AON,Financials
-AXP,Financials
-BAC,Financials
-BBT,Financials
-BEN,Financials
-BHF,Financials
-BK,Financials
-BLK,Financials
-BRK.B,Financials
-C,Financials
-CB,Financials
-CBOE,Financials
-CFG,Financials
-CINF,Financials
-CMA,Financials
-CME,Financials
-COF,Financials
-DFS,Financials
-ETFC,Financials
-FITB,Financials
-GS,Financials
-HBAN,Financials
-HIG,Financials
-HRB,Financials
-ICE,Financials
-IVZ,Financials
-JPM,Financials
-KEY,Financials
-L,Financials
-LNC,Financials
-LUK,Financials
-MCO,Financials
-MET,Financials
-MMC,Financials
-MS,Financials
-MTB,Financials
-NAVI,Financials
-NDAQ,Financials
-NTRS,Financials
-PBCT,Financials
-PFG,Financials
-PGR,Financials
-PNC,Financials
-PRU,Financials
-RE,Financials
-RF,Financials
-RJF,Financials
-SCHW,Financials
-SPGI,Financials
-STI,Financials
-STT,Financials
-SYF,Financials
-TMK,Financials
-TROW,Financials
-TRV,Financials
-UNM,Financials
-USB,Financials
-WFC,Financials
-WLTW,Financials
-XL,Financials
-ZION,Financials
-A,Health Care
-ABBV,Health Care
-ABC,Health Care
-ABT,Health Care
-AET,Health Care
-AGN,Health Care
-ALGN,Health Care
-ALXN,Health Care
-AMGN,Health Care
-ANTM,Health Care
-BAX,Health Care
-BCR,Health Care
-BDX,Health Care
-BIIB,Health Care
-BMY,Health Care
-BSX,Health Care
-CAH,Health Care
-CELG,Health Care
-CERN,Health Care
-CI,Health Care
-CNC,Health Care
-COO,Health Care
-DGX,Health Care
-DHR,Health Care
-DVA,Health Care
-ESRX,Health Care
-EVHC,Health Care
-EW,Health Care
-GILD,Health Care
-HCA,Health Care
-HOLX,Health Care
-HSIC,Health Care
-HUM,Health Care
-IDXX,Health Care
-ILMN,Health Care
-INCY,Health Care
-ISRG,Health Care
-JNJ,Health Care
-LH,Health Care
-LLY,Health Care
-MCK,Health Care
-MDT,Health Care
-MRK,Health Care
-MTD,Health Care
-MYL,Health Care
-PDCO,Health Care
-PFE,Health Care
-PKI,Health Care
-PRGO,Health Care
-Q,Health Care
-REGN,Health Care
-RMD,Health Care
-SYK,Health Care
-TMO,Health Care
-UHS,Health Care
-UNH,Health Care
-VAR,Health Care
-VRTX,Health Care
-WAT,Health Care
-XRAY,Health Care
-ZBH,Health Care
-ZTS,Health Care
-AAL,Industrials
-ALK,Industrials
-ALLE,Industrials
-AME,Industrials
-AOS,Industrials
-ARNC,Industrials
-AYI,Industrials
-BA,Industrials
-CAT,Industrials
-CHRW,Industrials
-CMI,Industrials
-COL,Industrials
-CSX,Industrials
-CTAS,Industrials
-DAL,Industrials
-DE,Industrials
-DOV,Industrials
-EFX,Industrials
-EMR,Industrials
-ETN,Industrials
-EXPD,Industrials
-FAST,Industrials
-FBHS,Industrials
-FDX,Industrials
-FLR,Industrials
-FLS,Industrials
-FTV,Industrials
-GD,Industrials
-GE,Industrials
-GWW,Industrials
-HON,Industrials
-INFO,Industrials
-IR,Industrials
-ITW,Industrials
-JBHT,Industrials
-JCI,Industrials
-JEC,Industrials
-KSU,Industrials
-LLL,Industrials
-LMT,Industrials
-LUV,Industrials
-MAS,Industrials
-MMM,Industrials
-NLSN,Industrials
-NOC,Industrials
-NSC,Industrials
-PCAR,Industrials
-PH,Industrials
-PNR,Industrials
-PWR,Industrials
-RHI,Industrials
-ROK,Industrials
-ROP,Industrials
-RSG,Industrials
-RTN,Industrials
-SRCL,Industrials
-TDG,Industrials
-TXT,Industrials
-UAL,Industrials
-UNP,Industrials
-UPS,Industrials
-URI,Industrials
-UTX,Industrials
-VRSK,Industrials
-WM,Industrials
-XYL,Industrials
-AAPL,Information Technology
-ACN,Information Technology
-ADBE,Information Technology
-ADI,Information Technology
-ADP,Information Technology
-ADS,Information Technology
-ADSK,Information Technology
-AKAM,Information Technology
-AMAT,Information Technology
-AMD,Information Technology
-ANSS,Information Technology
-APH,Information Technology
-ATVI,Information Technology
-AVGO,Information Technology
-CA,Information Technology
-CRM,Information Technology
-CSCO,Information Technology
-CSRA,Information Technology
-CTSH,Information Technology
-CTXS,Information Technology
-DXC,Information Technology
-EA,Information Technology
-EBAY,Information Technology
-FB,Information Technology
-FFIV,Information Technology
-FIS,Information Technology
-FISV,Information Technology
-FLIR,Information Technology
-GLW,Information Technology
-GOOG,Information Technology
-GOOGL,Information Technology
-GPN,Information Technology
-HPE,Information Technology
-HPQ,Information Technology
-HRS,Information Technology
-IBM,Information Technology
-INTC,Information Technology
-INTU,Information Technology
-IT,Information Technology
-JNPR,Information Technology
-KLAC,Information Technology
-LRCX,Information Technology
-MA,Information Technology
-MCHP,Information Technology
-MSFT,Information Technology
-MSI,Information Technology
-MU,Information Technology
-NFLX,Information Technology
-NTAP,Information Technology
-NVDA,Information Technology
-ORCL,Information Technology
-PAYX,Information Technology
-PYPL,Information Technology
-QCOM,Information Technology
-QRVO,Information Technology
-RHT,Information Technology
-SNPS,Information Technology
-STX,Information Technology
-SWKS,Information Technology
-SYMC,Information Technology
-TEL,Information Technology
-TSS,Information Technology
-TXN,Information Technology
-V,Information Technology
-VRSN,Information Technology
-WDC,Information Technology
-WU,Information Technology
-XLNX,Information Technology
-XRX,Information Technology
-ALB,Materials
-APD,Materials
-AVY,Materials
-BLL,Materials
-CF,Materials
-DWDP,Materials
-ECL,Materials
-EMN,Materials
-FCX,Materials
-FMC,Materials
-IFF,Materials
-IP,Materials
-LYB,Materials
-MLM,Materials
-MON,Materials
-MOS,Materials
-NEM,Materials
-NUE,Materials
-PKG,Materials
-PPG,Materials
-PX,Materials
-SEE,Materials
-SHW,Materials
-VMC,Materials
-WRK,Materials
-AIV,Real Estate
-AMT,Real Estate
-ARE,Real Estate
-AVB,Real Estate
-BXP,Real Estate
-CBG,Real Estate
-CCI,Real Estate
-DLR,Real Estate
-DRE,Real Estate
-EQIX,Real Estate
-EQR,Real Estate
-ESS,Real Estate
-EXR,Real Estate
-FRT,Real Estate
-GGP,Real Estate
-HCN,Real Estate
-HCP,Real Estate
-HST,Real Estate
-IRM,Real Estate
-KIM,Real Estate
-MAA,Real Estate
-MAC,Real Estate
-O,Real Estate
-PLD,Real Estate
-PSA,Real Estate
-REG,Real Estate
-SBAC,Real Estate
-SLG,Real Estate
-SPG,Real Estate
-UDR,Real Estate
-VNO,Real Estate
-VTR,Real Estate
-WY,Real Estate
-CTL,Telecommunication Services
-LVLT,Telecommunication Services
-T,Telecommunication Services
-VZ,Telecommunication Services
-AEE,Utilities
-AEP,Utilities
-AES,Utilities
-AWK,Utilities
-CMS,Utilities
-CNP,Utilities
-D,Utilities
-DTE,Utilities
-DUK,Utilities
-ED,Utilities
-EIX,Utilities
-ES,Utilities
-ETR,Utilities
-EXC,Utilities
-FE,Utilities
-LNT,Utilities
-NEE,Utilities
-NI,Utilities
-NRG,Utilities
-PCG,Utilities
-PEG,Utilities
-PNW,Utilities
-PPL,Utilities
-SCG,Utilities
-SO,Utilities
-SRE,Utilities
-WEC,Utilities
-XEL,Utilities
+"stock","sector"
+"MMM","Industrials"
+"ABT","HealthCare"
+"ABBV","HealthCare"
+"ACN","InformationTechnology"
+"ATVI","InformationTechnology"
+"AYI","Industrials"
+"ADBE","InformationTechnology"
+"AMD","InformationTechnology"
+"AAP","ConsumerDiscretionary"
+"AES","Utilities"
+"AET","HealthCare"
+"AMG","Financials"
+"AFL","Financials"
+"A","HealthCare"
+"APD","Materials"
+"AKAM","InformationTechnology"
+"ALK","Industrials"
+"ALB","Materials"
+"ARE","RealEstate"
+"ALXN","HealthCare"
+"ALGN","HealthCare"
+"ALLE","Industrials"
+"AGN","HealthCare"
+"ADS","InformationTechnology"
+"LNT","Utilities"
+"ALL","Financials"
+"GOOGL","InformationTechnology"
+"GOOG","InformationTechnology"
+"MO","ConsumerStaples"
+"AMZN","ConsumerDiscretionary"
+"AEE","Utilities"
+"AAL","Industrials"
+"AEP","Utilities"
+"AXP","Financials"
+"AIG","Financials"
+"AMT","RealEstate"
+"AWK","Utilities"
+"AMP","Financials"
+"ABC","HealthCare"
+"AME","Industrials"
+"AMGN","HealthCare"
+"APH","InformationTechnology"
+"APC","Energy"
+"ADI","InformationTechnology"
+"ANDV","Energy"
+"ANSS","InformationTechnology"
+"ANTM","HealthCare"
+"AON","Financials"
+"AOS","Industrials"
+"APA","Energy"
+"AIV","RealEstate"
+"AAPL","InformationTechnology"
+"AMAT","InformationTechnology"
+"ADM","ConsumerStaples"
+"ARNC","Industrials"
+"AJG","Financials"
+"AIZ","Financials"
+"T","TelecommunicationServices"
+"ADSK","InformationTechnology"
+"ADP","InformationTechnology"
+"AZO","ConsumerDiscretionary"
+"AVB","RealEstate"
+"AVY","Materials"
+"BHGE","Energy"
+"BLL","Materials"
+"BAC","Financials"
+"BK","Financials"
+"BCR","HealthCare"
+"BAX","HealthCare"
+"BBT","Financials"
+"BDX","HealthCare"
+"BRK.B","Financials"
+"BBY","ConsumerDiscretionary"
+"BIIB","HealthCare"
+"BLK","Financials"
+"HRB","Financials"
+"BA","Industrials"
+"BWA","ConsumerDiscretionary"
+"BXP","RealEstate"
+"BSX","HealthCare"
+"BHF","Financials"
+"BMY","HealthCare"
+"AVGO","InformationTechnology"
+"BF.B","ConsumerStaples"
+"CHRW","Industrials"
+"CA","InformationTechnology"
+"COG","Energy"
+"CPB","ConsumerStaples"
+"COF","Financials"
+"CAH","HealthCare"
+"CBOE","Financials"
+"KMX","ConsumerDiscretionary"
+"CCL","ConsumerDiscretionary"
+"CAT","Industrials"
+"CBG","RealEstate"
+"CBS","ConsumerDiscretionary"
+"CELG","HealthCare"
+"CNC","HealthCare"
+"CNP","Utilities"
+"CTL","TelecommunicationServices"
+"CERN","HealthCare"
+"CF","Materials"
+"SCHW","Financials"
+"CHTR","ConsumerDiscretionary"
+"CHK","Energy"
+"CVX","Energy"
+"CMG","ConsumerDiscretionary"
+"CB","Financials"
+"CHD","ConsumerStaples"
+"CI","HealthCare"
+"XEC","Energy"
+"CINF","Financials"
+"CTAS","Industrials"
+"CSCO","InformationTechnology"
+"C","Financials"
+"CFG","Financials"
+"CTXS","InformationTechnology"
+"CLX","ConsumerStaples"
+"CME","Financials"
+"CMS","Utilities"
+"COH","ConsumerDiscretionary"
+"KO","ConsumerStaples"
+"CTSH","InformationTechnology"
+"CL","ConsumerStaples"
+"CMCSA","ConsumerDiscretionary"
+"CMA","Financials"
+"CAG","ConsumerStaples"
+"CXO","Energy"
+"COP","Energy"
+"ED","Utilities"
+"STZ","ConsumerStaples"
+"COO","HealthCare"
+"GLW","InformationTechnology"
+"COST","ConsumerStaples"
+"COTY","ConsumerStaples"
+"CCI","RealEstate"
+"CSRA","InformationTechnology"
+"CSX","Industrials"
+"CMI","Industrials"
+"CVS","ConsumerStaples"
+"DHI","ConsumerDiscretionary"
+"DHR","HealthCare"
+"DRI","ConsumerDiscretionary"
+"DVA","HealthCare"
+"DE","Industrials"
+"DLPH","ConsumerDiscretionary"
+"DAL","Industrials"
+"XRAY","HealthCare"
+"DVN","Energy"
+"DLR","RealEstate"
+"DFS","Financials"
+"DISCA","ConsumerDiscretionary"
+"DISCK","ConsumerDiscretionary"
+"DISH","ConsumerDiscretionary"
+"DG","ConsumerDiscretionary"
+"DLTR","ConsumerDiscretionary"
+"D","Utilities"
+"DOV","Industrials"
+"DWDP","Materials"
+"DPS","ConsumerStaples"
+"DTE","Utilities"
+"DRE","RealEstate"
+"DUK","Utilities"
+"DXC","InformationTechnology"
+"ETFC","Financials"
+"EMN","Materials"
+"ETN","Industrials"
+"EBAY","InformationTechnology"
+"ECL","Materials"
+"EIX","Utilities"
+"EW","HealthCare"
+"EA","InformationTechnology"
+"EMR","Industrials"
+"ETR","Utilities"
+"EVHC","HealthCare"
+"EOG","Energy"
+"EQT","Energy"
+"EFX","Industrials"
+"EQIX","RealEstate"
+"EQR","RealEstate"
+"ESS","RealEstate"
+"EL","ConsumerStaples"
+"ES","Utilities"
+"RE","Financials"
+"EXC","Utilities"
+"EXPE","ConsumerDiscretionary"
+"EXPD","Industrials"
+"ESRX","HealthCare"
+"EXR","RealEstate"
+"XOM","Energy"
+"FFIV","InformationTechnology"
+"FB","InformationTechnology"
+"FAST","Industrials"
+"FRT","RealEstate"
+"FDX","Industrials"
+"FIS","InformationTechnology"
+"FITB","Financials"
+"FE","Utilities"
+"FISV","InformationTechnology"
+"FLIR","InformationTechnology"
+"FLS","Industrials"
+"FLR","Industrials"
+"FMC","Materials"
+"FL","ConsumerDiscretionary"
+"F","ConsumerDiscretionary"
+"FTV","Industrials"
+"FBHS","Industrials"
+"BEN","Financials"
+"FCX","Materials"
+"GPS","ConsumerDiscretionary"
+"GRMN","ConsumerDiscretionary"
+"IT","InformationTechnology"
+"GD","Industrials"
+"GE","Industrials"
+"GGP","RealEstate"
+"GIS","ConsumerStaples"
+"GM","ConsumerDiscretionary"
+"GPC","ConsumerDiscretionary"
+"GILD","HealthCare"
+"GPN","InformationTechnology"
+"GS","Financials"
+"GT","ConsumerDiscretionary"
+"GWW","Industrials"
+"HAL","Energy"
+"HBI","ConsumerDiscretionary"
+"HOG","ConsumerDiscretionary"
+"HRS","InformationTechnology"
+"HIG","Financials"
+"HAS","ConsumerDiscretionary"
+"HCA","HealthCare"
+"HCP","RealEstate"
+"HP","Energy"
+"HSIC","HealthCare"
+"HSY","ConsumerStaples"
+"HES","Energy"
+"HPE","InformationTechnology"
+"HLT","ConsumerDiscretionary"
+"HOLX","HealthCare"
+"HD","ConsumerDiscretionary"
+"HON","Industrials"
+"HRL","ConsumerStaples"
+"HST","RealEstate"
+"HPQ","InformationTechnology"
+"HUM","HealthCare"
+"HBAN","Financials"
+"IDXX","HealthCare"
+"INFO","Industrials"
+"ITW","Industrials"
+"ILMN","HealthCare"
+"IR","Industrials"
+"INTC","InformationTechnology"
+"ICE","Financials"
+"IBM","InformationTechnology"
+"INCY","HealthCare"
+"IP","Materials"
+"IPG","ConsumerDiscretionary"
+"IFF","Materials"
+"INTU","InformationTechnology"
+"ISRG","HealthCare"
+"IVZ","Financials"
+"IRM","RealEstate"
+"JEC","Industrials"
+"JBHT","Industrials"
+"SJM","ConsumerStaples"
+"JNJ","HealthCare"
+"JCI","Industrials"
+"JPM","Financials"
+"JNPR","InformationTechnology"
+"KSU","Industrials"
+"K","ConsumerStaples"
+"KEY","Financials"
+"KMB","ConsumerStaples"
+"KIM","RealEstate"
+"KMI","Energy"
+"KLAC","InformationTechnology"
+"KSS","ConsumerDiscretionary"
+"KHC","ConsumerStaples"
+"KR","ConsumerStaples"
+"LB","ConsumerDiscretionary"
+"LLL","Industrials"
+"LH","HealthCare"
+"LRCX","InformationTechnology"
+"LEG","ConsumerDiscretionary"
+"LEN","ConsumerDiscretionary"
+"LVLT","TelecommunicationServices"
+"LUK","Financials"
+"LLY","HealthCare"
+"LNC","Financials"
+"LKQ","ConsumerDiscretionary"
+"L","Financials"
+"LOW","ConsumerDiscretionary"
+"LYB","Materials"
+"MTB","Financials"
+"MAC","RealEstate"
+"M","ConsumerDiscretionary"
+"MRO","Energy"
+"MPC","Energy"
+"MAR","ConsumerDiscretionary"
+"MMC","Financials"
+"MLM","Materials"
+"MAS","Industrials"
+"MA","InformationTechnology"
+"MAT","ConsumerDiscretionary"
+"MKC","ConsumerStaples"
+"MCD","ConsumerDiscretionary"
+"MCK","HealthCare"
+"MDT","HealthCare"
+"MRK","HealthCare"
+"MET","Financials"
+"MTD","HealthCare"
+"MGM","ConsumerDiscretionary"
+"KORS","ConsumerDiscretionary"
+"MCHP","InformationTechnology"
+"MU","InformationTechnology"
+"MSFT","InformationTechnology"
+"MAA","RealEstate"
+"MHK","ConsumerDiscretionary"
+"TAP","ConsumerStaples"
+"MDLZ","ConsumerStaples"
+"MON","Materials"
+"MNST","ConsumerStaples"
+"MCO","Financials"
+"MS","Financials"
+"MOS","Materials"
+"MSI","InformationTechnology"
+"MYL","HealthCare"
+"NDAQ","Financials"
+"NOV","Energy"
+"NAVI","Financials"
+"NTAP","InformationTechnology"
+"NFLX","InformationTechnology"
+"NWL","ConsumerDiscretionary"
+"NFX","Energy"
+"NEM","Materials"
+"NWSA","ConsumerDiscretionary"
+"NWS","ConsumerDiscretionary"
+"NEE","Utilities"
+"NLSN","Industrials"
+"NKE","ConsumerDiscretionary"
+"NI","Utilities"
+"NBL","Energy"
+"JWN","ConsumerDiscretionary"
+"NSC","Industrials"
+"NTRS","Financials"
+"NOC","Industrials"
+"NRG","Utilities"
+"NUE","Materials"
+"NVDA","InformationTechnology"
+"ORLY","ConsumerDiscretionary"
+"OXY","Energy"
+"OMC","ConsumerDiscretionary"
+"OKE","Energy"
+"ORCL","InformationTechnology"
+"PCAR","Industrials"
+"PKG","Materials"
+"PH","Industrials"
+"PDCO","HealthCare"
+"PAYX","InformationTechnology"
+"PYPL","InformationTechnology"
+"PNR","Industrials"
+"PBCT","Financials"
+"PEP","ConsumerStaples"
+"PKI","HealthCare"
+"PRGO","HealthCare"
+"PFE","HealthCare"
+"PCG","Utilities"
+"PM","ConsumerStaples"
+"PSX","Energy"
+"PNW","Utilities"
+"PXD","Energy"
+"PNC","Financials"
+"RL","ConsumerDiscretionary"
+"PPG","Materials"
+"PPL","Utilities"
+"PX","Materials"
+"PCLN","ConsumerDiscretionary"
+"PFG","Financials"
+"PG","ConsumerStaples"
+"PGR","Financials"
+"PLD","RealEstate"
+"PRU","Financials"
+"PEG","Utilities"
+"PSA","RealEstate"
+"PHM","ConsumerDiscretionary"
+"PVH","ConsumerDiscretionary"
+"QRVO","InformationTechnology"
+"PWR","Industrials"
+"QCOM","InformationTechnology"
+"DGX","HealthCare"
+"Q","HealthCare"
+"RRC","Energy"
+"RJF","Financials"
+"RTN","Industrials"
+"O","RealEstate"
+"RHT","InformationTechnology"
+"REG","RealEstate"
+"REGN","HealthCare"
+"RF","Financials"
+"RSG","Industrials"
+"RMD","HealthCare"
+"RHI","Industrials"
+"ROK","Industrials"
+"COL","Industrials"
+"ROP","Industrials"
+"ROST","ConsumerDiscretionary"
+"RCL","ConsumerDiscretionary"
+"CRM","InformationTechnology"
+"SBAC","RealEstate"
+"SCG","Utilities"
+"SLB","Energy"
+"SNI","ConsumerDiscretionary"
+"STX","InformationTechnology"
+"SEE","Materials"
+"SRE","Utilities"
+"SHW","Materials"
+"SIG","ConsumerDiscretionary"
+"SPG","RealEstate"
+"SWKS","InformationTechnology"
+"SLG","RealEstate"
+"SNA","ConsumerDiscretionary"
+"SO","Utilities"
+"LUV","Industrials"
+"SPGI","Financials"
+"SWK","ConsumerDiscretionary"
+"SPLS","ConsumerDiscretionary"
+"SBUX","ConsumerDiscretionary"
+"STT","Financials"
+"SRCL","Industrials"
+"SYK","HealthCare"
+"STI","Financials"
+"SYMC","InformationTechnology"
+"SYF","Financials"
+"SNPS","InformationTechnology"
+"SYY","ConsumerStaples"
+"TROW","Financials"
+"TGT","ConsumerDiscretionary"
+"TEL","InformationTechnology"
+"FTI","Energy"
+"TXN","InformationTechnology"
+"TXT","Industrials"
+"TMO","HealthCare"
+"TIF","ConsumerDiscretionary"
+"TWX","ConsumerDiscretionary"
+"TJX","ConsumerDiscretionary"
+"TMK","Financials"
+"TSS","InformationTechnology"
+"TSCO","ConsumerDiscretionary"
+"TDG","Industrials"
+"TRV","Financials"
+"TRIP","ConsumerDiscretionary"
+"FOXA","ConsumerDiscretionary"
+"FOX","ConsumerDiscretionary"
+"TSN","ConsumerStaples"
+"UDR","RealEstate"
+"ULTA","ConsumerDiscretionary"
+"USB","Financials"
+"UA","ConsumerDiscretionary"
+"UAA","ConsumerDiscretionary"
+"UNP","Industrials"
+"UAL","Industrials"
+"UNH","HealthCare"
+"UPS","Industrials"
+"URI","Industrials"
+"UTX","Industrials"
+"UHS","HealthCare"
+"UNM","Financials"
+"VFC","ConsumerDiscretionary"
+"VLO","Energy"
+"VAR","HealthCare"
+"VTR","RealEstate"
+"VRSN","InformationTechnology"
+"VRSK","Industrials"
+"VZ","TelecommunicationServices"
+"VRTX","HealthCare"
+"VIAB","ConsumerDiscretionary"
+"V","InformationTechnology"
+"VNO","RealEstate"
+"VMC","Materials"
+"WMT","ConsumerStaples"
+"WBA","ConsumerStaples"
+"DIS","ConsumerDiscretionary"
+"WM","Industrials"
+"WAT","HealthCare"
+"WEC","Utilities"
+"WFC","Financials"
+"HCN","RealEstate"
+"WDC","InformationTechnology"
+"WU","InformationTechnology"
+"WRK","Materials"
+"WY","RealEstate"
+"WHR","ConsumerDiscretionary"
+"WMB","Energy"
+"WLTW","Financials"
+"WYN","ConsumerDiscretionary"
+"WYNN","ConsumerDiscretionary"
+"XEL","Utilities"
+"XRX","InformationTechnology"
+"XLNX","InformationTechnology"
+"XL","Financials"
+"XYL","Industrials"
+"YUM","ConsumerDiscretionary"
+"ZBH","HealthCare"
+"ZION","Financials"
+"ZTS","HealthCare"
