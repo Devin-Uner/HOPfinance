@@ -1,0 +1,105 @@
+.thinga{
+	color: red;
+}
+
+.rNavBar{
+	background-color: #8080FF;
+	height:100px;
+	<!--box-shadow: 10px 10px 5px #666666;-->
+}
+
+.rDeepBlue{
+	color:navy;
+}
+
+.rBrand{
+	font-size:60px;
+	margin:20px;
+}
+
+.rNavButton{
+	height:100px;
+}
+
+.ourCanvas{
+	border:1px solid #000000 ;
+}
+
+.ractive{
+	background-color:navy;
+	color:white;
+}
+
+.rButton{
+	background-color:navy;
+	color:white;
+	<!--box-shadow: 5px 5px 2px #444444;-->
+}
+
+.rButton:hover{
+	color:lightblue;
+}
+
+.leftTop{
+	padding:10px;
+	padding-top: 10px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom: 20px;
+	background-color:#8080FF;
+	border-radius: 10px;
+	<!--box-shadow: 10px 10px 5px #666666;-->
+	color:navy;
+}
+
+body{
+	background-color: lightblue;
+}
+
+.dailyTotal{
+	font-size: 70px;
+}
+
+.dailyOrgHelped{
+	font-size: 60px;
+}
+
+.long{
+	width:95%;
+	padding:20px;
+	margin:20px;
+	background-color:#8080FF;
+	border-radius: 10px;
+	<!--box-shadow: 10px 10px 5px #666666;-->
+	color:navy;
+}
+
+.rLink{
+	color:black;
+}
+
+.rRight{
+	float:right;
+	margin-right:25px;
+}
+
+.rTable{
+	background-color:white;
+	border-color:#8080FF;
+	padding:5px;
+	padding-bottom:0px;
+}
+
+.rCondensed{
+	padding:5px;
+	margin:5px;
+	background-color:#8080FF;
+	border-radius: 10px;
+	color:navy;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

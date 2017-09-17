@@ -1,0 +1,122 @@
+.thinga{
+	color: red;
+}
+
+.rNavBar{
+	background-color: white;
+	height:100px;
+	<!--box-shadow: 10px 10px 5px #666666;-->
+}
+
+.rDeepBlue{
+	color:#800000;
+}
+
+.rBrand{
+	font-size:60px;
+	margin:20px;
+}
+
+.rNavButton{
+	background-color: white;
+	margin:5px;
+	height:50px;
+}
+
+.ourCanvas{
+	border:1px solid #000000 ;
+}
+
+.leftBar{
+	
+}
+
+.ractive{
+	background-color:#800000;
+	color:white;
+}
+
+.rButton{
+	background-color:black;
+	color:#808080;
+	<!--box-shadow: 5px 5px 2px #444444;-->
+}
+
+.rButton:hover{
+	color:white;
+}
+
+.leftTop{
+	padding:20px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	margin:10px;
+	background-color:white;
+	border-radius: 0px;
+	border-color: black;
+	border-width:5px;
+	<!--box-shadow: 10px 10px 5px #666666;-->
+	color:white;
+}
+
+body{
+	background-color: #d0d0d0;
+}
+
+.dailyTotal{
+	font-size: 70px;
+}
+
+.dailyOrgHelped{
+	font-size: 60px;
+}
+
+.long{
+	width:95%;
+	padding:20px;
+	margin:20px;
+	background-color:white;
+	border-radius: 0px;
+	<!--box-shadow: 10px 10px 5px #666666;-->
+	color:white;
+}
+
+.rLink{
+	color:black;
+}
+
+.noSize{
+	padding:0px;
+	margin:0px;
+	border-style: none;
+}
+
+.rRight{
+	float:right;
+	margin-right:0px;
+}
+
+.rListItem{
+	background-color:white;
+	border-color:black;
+	color:white;
+}
+
+.rCondensed{
+	padding:5px;
+	padding-bottom: 5px;
+	margin:3px;
+	background-color:white;
+	<!--box-shadow: 10px 10px 5px #666666;-->
+	color:white;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rCanvas{
+	padding:0px;
+}

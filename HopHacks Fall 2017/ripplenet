@@ -1,0 +1,7 @@
+.thinga{
+	color: red;
+}
+
+.rHeading{
+	background-color: lightblue;
+}
