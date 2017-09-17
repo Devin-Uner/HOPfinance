@@ -134,7 +134,7 @@ function get_circle_locations(){
 }
 
 // randomly moves each circle in the grid
-function move_circles(grid){
+function move_circles(){
 	let grid_size = 5;
 
 	// for everything row in the array
@@ -146,13 +146,13 @@ function move_circles(grid){
 			// if the cell isnt empty
 			if(grid[x][y] != null){
 				// pick to randomly add or subtract from the x position
-				var delta_x = Math.random() > 0.5 ? -1 : 1;
+				var delta_x = Math.random() > 0.5 ? -0.1 : 0.1;
 				if(grid[x][y]["x"] + delta_x < 0 || grid[x][y]["x"] + delta_x > (x+1)*grid_size)
 					delta_x *= -1;
 				grid[x][y]["x"] += delta_x;
 
 				// pick to randomly add or subtract from the y position
-				var delta_y = Math.random() > 0.5 ? -1 : 1;
+				var delta_y = Math.random() > 0.5 ? -0.1 : 0.1;
 				if(grid[x][y]["y"] + delta_y < 0 || grid[x][y]["y"] + delta_y > (y+1)*grid_size)
 					delta_y *= -1;
 				grid[x][y]["y"] += delta_y;
@@ -174,7 +174,6 @@ function draw_circles() {
 			// if the cell isnt empty
 			if(grid[x][y] != null){
 				color = industry_to_colors[company_to_industry[grid[x][y]["name"].replace(".csv","")]];
-				console.log(color);
 				draw_circle("rgba("+color[0].toString()+","+color[1].toString()+","+color[2].toString()+","+grid[x][y]["brightness"].toString()+")", grid[x][y]["x"], grid[x][y]["y"], grid[x][y]["radius"]);
 			}
 		}
@@ -187,8 +186,8 @@ function draw_line_from_companies(name1, name2) {
 	 let loc2 = get_location(name2);
 
 	 let width = Math.floor(data[name1][name2]);
-	 console.log(loc1, loc2);
-	 draw_line("#0F0", width, loc1[0], loc1[1], loc2[0], loc2[1]);
+	 // console.log(loc1, loc2);
+	 draw_line("#000", width, loc1[0], loc1[1], loc2[0], loc2[1]);
 }
 
 
@@ -206,7 +205,7 @@ function get_location(name){
 function connect_edges() {
     for (var i = 0; i < get_keys(data).length; i++) {
         var sortArr = sort(data[get_keys(data)[i]]);
-        for (j = sortArr.length - 1; j > sortArr.length - 4; j--) {
+        for (j = sortArr.length - 1; j > sortArr.length - 2; j--) {
             draw_line_from_companies(get_keys(data)[i], sortArr[j]);
         } 
     }
@@ -222,12 +221,21 @@ function click_release(event) {
     var coor = "X coords: " + x + ", Y coords: " + y;
     console.log(coor);
     
-	draw_circle([x, y], 5, "FF0000");  
+	for (var i = 0; i < circles.length; i++) {
+    	if( Math.pow(  Math.pow(x-circles[i]["x"], 2) + Math.pow(y-circles[i]["y"], 2), 0.5) < circles[i]["radius"])
+    		document.getElementById("textfield").innerHTML = (circles[i]["name"]);
+    }
 }
 
-connect_edges();
-draw_circles();
 
+
+
+setInterval(function draw() {
+	ctx.clearRect(0,0,canvas.width,canvas.height);
+	move_circles();
+	connect_edges();
+	draw_circles();
+}, 100);
 
 
 
@@ -243,8 +251,8 @@ function getMousePos(canvas, evt) {
     var mousePos = getMousePos(canvas, evt);
     
     for (var i = 0; i < circles.length; i++) {
-    	if( Math.pow(  Math.pow(Math.abs(x-circles[i]["x"]-canvas.getBoundingClientRect().left), 2) + Math.pow(Math.abs(y-circles[i]["y"]-canvas.getBoundingClientRect().top), 2), 0.5) < circles[i]["radius"])
-    		document.getElementById("textfield").innerHTML = circles[i]["name"];
+    	if( Math.pow(  Math.pow(x-circles[i]["x"], 2) + Math.pow(y-circles[i]["y"], 2), 0.5) < circles[i]["radius"])
+    		console.log(circles[i]["name"]);
     }
 
   }, false);
