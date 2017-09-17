@@ -1,0 +1,7 @@
+To go on our "resources" page:
+
+There are numerous public charities which are currently operational in the United States.
+The National Center for Charitable Statistics has compiled a list of the largest public charities in the
+Unitied States, seperated by industry.  You may find this resource useful as you decide where you should best invest your money using your neural network.  The link is below:
+
+http://nccs.urban.org/data-statistics/quick-facts-about-nonprofits

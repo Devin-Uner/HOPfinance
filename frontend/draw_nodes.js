@@ -118,7 +118,6 @@ function get_circle_locations(){
 		for (var i = 0; i < circles.length; i++) {
             //make sure no two circles are in same cell
             while(true) {
-                var randX = Math.floor((Math.random() * DIMENSION));
                 var randY = Math.floor((Math.random() * DIMENSION));
                 if (grid[randX][randY] == null) {
                     break;
@@ -134,8 +133,8 @@ function get_circle_locations(){
 }
 
 // randomly moves each circle in the grid
-function move_circles(){
-	let grid_size = 5;
+function move_circles(grid){
+	let grid_size = max_radius*2;
 
 	// for everything row in the array
 	for (var x = 0; x < grid.length; x++) {
@@ -163,7 +162,7 @@ function move_circles(){
 
 
 // draws all the circles to the screen
-function draw_circles() {
+function draw_circles(grid) {
 
 	// for everything row in the array
 	for (var x = 0; x < grid.length; x++) {
@@ -203,10 +202,10 @@ function get_location(name){
 
 //find which edges to draw between circles
 function connect_edges() {
-    for (var i = 0; i < get_keys(data).length; i++) {
+    for (int i = 0; i < get_keys(data).length; i++) {
         var sortArr = sort(data[get_keys(data)[i]]);
-        for (j = sortArr.length - 1; j > sortArr.length - 2; j--) {
-            draw_line_from_companies(get_keys(data)[i], sortArr[j]);
+        for (j = sortArr.length - 1; j > sortArr.length - 4; j--) {
+            draw_line_from_companies(get_keys(data)[i], sortedArr[j]);
         } 
     }
 }
@@ -227,7 +226,44 @@ function click_release(event) {
     }
 }
 
+/* Compute "diffusion" process. 
+ * Takes in one node that gets clicked on.
+ * Then uses edge weights to calculate how 
+ * "brightness" on other nodes are effected.
+ * which determines how closely related two 
+ * companies/industries are. */
+function graph_reaction(name) {
+    var circles = {};
+    for(var key in data) {
+        circles[key] = 0;
+    }
+        circles[name] = 100;
 
+    newCircles = copy_dict(circles);
+    spread = [];
+    while (spread.length < get_keys(circles).length) {
+        for (var circ in circles) {
+            if (circles[circ] != 0 && spread[circ] != -1) {
+                newCircles[circ] = circles[circ];
+                newCircles[circ] = sort(data[circ]);
+                for (var i = data[circ].length - 1; i > data[circ].length - 4; i--) {
+                    newCircles[i] += data[circ][i];
+                }
+                spread.push(circ); 
+            }
+            circles = copy_dict(circles);
+        }
+    }  
+}
+
+/* Helper method to copy a dictionary. */
+function copy_dict(dict) {
+    var copy = {};
+    for (entry in dict) {
+        copy[entry] = dict[entry];
+    }
+    return copy;
+}
 
 
 setInterval(function draw() {
